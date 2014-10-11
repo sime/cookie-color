@@ -6,7 +6,7 @@
       require: 'ngModel',
       link: function(scope, elm, attrs, ctrl) {
         ctrl.$parsers.unshift(function(viewValue) {
-          if (/(green|blue|red|yellow)/i.test(viewValue)) {
+          if (/^(green|blue|red|yellow)$/i.test(viewValue)) {
             ctrl.$setValidity('color', true);
             return viewValue;
           } else {
