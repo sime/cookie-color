@@ -1,0 +1,23 @@
+body {
+  background-color: lightgrey;
+}
+
+.ng-dirty.ng-invalid {
+  border: 1px solid red;
+}
+
+input {
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+  border: 0;
+}
+
+div {
+  min-height: 20px;
+  text-overflow: hidden;
+  transition: all 0.5s;
+}
+

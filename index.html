@@ -1,12 +1,17 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="cookies">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="js/angular.min.js"></script>
-    <title>AngularJS - 9Cookies</title>
+    <script type="text/javascript" src="js/app.js"></script>
+    <title>9Cookies - AngularJS</title>
+    <link rel="stylesheet" href="css/site.css" type="text/css" media="all" />
   </head>
   <body>
-
+    <!-- input type="text" ng-model="color" ng-pattern="/(green|blue|red|yellow)/" placeholder="Enter a color here" -->
+    <input type="text" ng-model="bgColor" placeholder="Enter a color..." color autofocus>
+    <hr>
+    <div style="background-color: {{bgColor || 'white'}};">{{bgColor}}</div>
   </body>
 </html>
