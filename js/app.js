@@ -13,7 +13,7 @@
             ctrl.$setValidity('color', false);
             return undefined;
           }
-        })
+        });
       }
     };
   });
